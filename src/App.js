@@ -19,7 +19,10 @@ const  App = () => {
   }
   return (
     <div className='App'>
-      <h1>PicDisplay</h1>
+      <h1>Instagram</h1>
+      <InputBox />
+      <h2>Click submit to sign in</h2>
+      
       {loggedIn && < PicDisplay pictures={pictures}/>} 
      
     </div>

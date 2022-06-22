@@ -1,7 +1,25 @@
+
+
 const InputBox = () => {
+
+
+
+   
     return ( 
-    //   <form></form>
-    <h1>Hello</h1>
+    
+        <form >
+            <input placeholder="username"></input>
+            <input placeholder="password"></input>
+            <input placeholder="email"></input>
+            <input type="submit"
+            onSubmit={     
+                () => {
+                    console.log("hello")
+                }
+            }
+            ></input>
+        </form>
+    
      );
 }
  
