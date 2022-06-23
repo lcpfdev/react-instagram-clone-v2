@@ -6,24 +6,20 @@ const [username, setUsername] = useState('');
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(username)
-
+    console.log(username)
 }
-
-// const logInput = () => {
-//     console.log
-// }
-
-    return ( 
-    
-        <form 
+const handleChange = (event) => {
+    setUsername(event.target.value)
+}
+return ( 
+        <form  
         onSubmit={handleSubmit}>
-            <input  onChange={ (event) => {
-
-setUsername(event.target.value)
-console.log(setUsername)
-} }  placeholder="username"></input>
-            <input type="submit"></input>
+            <input 
+           onChange={ handleChange }  
+            placeholder="username">
+            </input>
+            <input   type="submit"></input>
+            
         </form>
     
      );
