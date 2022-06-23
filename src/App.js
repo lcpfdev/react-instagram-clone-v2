@@ -21,7 +21,7 @@ const  App = () => {
     <div className='App'>
       <h1>Instagram</h1>
       <InputBox />
-      <h2>Click submit to sign in</h2>
+      <p>Click submit to sign in</p>
       
       {loggedIn && < PicDisplay pictures={pictures}/>} 
      

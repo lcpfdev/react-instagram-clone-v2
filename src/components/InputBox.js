@@ -1,23 +1,29 @@
+import { useState } from "react";
 
 
 const InputBox = () => {
+const [username, setUsername] = useState('');
 
+const handleSubmit = (event) => {
+    event.preventDefault();
+    // console.log(username)
 
+}
 
-   
+// const logInput = () => {
+//     console.log
+// }
+
     return ( 
     
-        <form >
-            <input placeholder="username"></input>
-            <input placeholder="password"></input>
-            <input placeholder="email"></input>
-            <input type="submit"
-            onSubmit={     
-                () => {
-                    console.log("hello")
-                }
-            }
-            ></input>
+        <form 
+        onSubmit={handleSubmit}>
+            <input  onChange={ (event) => {
+
+setUsername(event.target.value)
+console.log(setUsername)
+} }  placeholder="username"></input>
+            <input type="submit"></input>
         </form>
     
      );
